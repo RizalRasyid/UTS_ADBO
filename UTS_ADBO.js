@@ -49,15 +49,23 @@ class Melahirkan extends Cuti {
     return `${this.nama} mengajukan ${hari} hari cuti melahirkan. Sisa kuota: ${this.kuota}`;
   }
 }
+//Cara Menggunakannya
+//1. Nama untuk setiap karyawan dan jenis cuti
+const nama1 = new Tahunan("Rizal");
+const nama2 = new Sakit("Khoirul");
+const nama3 = new Melahirkan("Nunu");
+const nama4 = new Cuti("Asha");
 
-const karyawan1 = new Tahunan("Dewi");
-const karyawan2 = new Sakit("Budi");
-const karyawan3 = new Melahirkan("Ayu");
-console.log(karyawan1.pengajuan(11));
-console.log(karyawan1.pengajuan(2));
-
-console.log(karyawan2.pengajuan(1));
-console.log(karyawan2.pengajuan(2));
-
-console.log(karyawan3.pengajuan(57));
-console.log(karyawan3.pengajuan(33));
+//2. Panggil pengajuannya 
+//Rizal
+console.log(nama1.pengajuan(6));
+console.log(nama1.pengajuan(4));
+console.log(nama1.pengajuan(3));
+//Khoirul
+console.log(nama2.pengajuan(1));
+console.log(nama2.pengajuan(2));
+//Nunu
+console.log(nama3.pengajuan(90));
+console.log(nama3.pengajuan(7));
+//Asha
+console.log(nama4.pengajuan(100))
